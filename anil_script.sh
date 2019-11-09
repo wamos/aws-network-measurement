@@ -1,5 +1,5 @@
 #!/bin/bash
-​
+
 # Parse command line arguments
 for i in "$@"
 do
@@ -11,11 +11,11 @@ case $i in
     -c|--client)            # Starts iPerf clients
     CLIENT=1
     ;;
-​
+    
     -n=*|--instances=*)     # Number of server or client instances
     instances="${i#*=}"
     ;;
-​
+
     -p=*|--size=*)          # Pkt size
     pktsize="${i#*=}"
     ;;
@@ -23,16 +23,16 @@ case $i in
     -t=*|--timeout=*)       # iPerf Client Timeout in Seconds
     timeout="${i#*=}"
     ;;
-​
+
     -o=*|--output=*)        # Output file
     finaloutput="${i#*=}"
     ;;
-​
+
     *)                      # unknown option
     ;;
 esac
 done
-​
+
 serverip=172.31.23.24             # p5p1 interface
 server_base_port=5000
 clientserverip=172.31.23.24         # Server IP as seen by client. For Audrey/Shu-Ting, same as serverip
@@ -46,9 +46,9 @@ timeout=${timeout:-10}                # How long you want it to run
 # datafile=data.txt
 # sarfile=sar.dat
 # let 'sleeptime = time + 2'
-​
+
 echo $instances, $pktsize, $timeout
-​
+
 # Mask for taskset
 cores=( 
     "0x00000001"
@@ -100,12 +100,12 @@ cores=(
     "0x400000000000"
     "0x800000000000"
     )
-​
-​
+
+
 if [[ $SERVER ]]; then
     # Kill any existing instances
     pkill iperf
-​
+
     # Start iPerf Server on cores [2, 25]
     echo "Starting iPerf servers"
     for i in $(seq 1 $instances); do
@@ -119,9 +119,9 @@ if [[ $SERVER ]]; then
             --output logs/server_${i}.dat &> logs/server_${i}.dat &
     done
     exit 0
-​
+
 elif [[ $CLIENT ]]; then
-​
+
     # Start iPerf Clients on cores [26, 48]
     echo "Starting iPerf clients"
     for i in $(seq 1 $instances); do
@@ -136,7 +136,7 @@ elif [[ $CLIENT ]]; then
             --output logs/client_${i}.dat &> logs/client_${i}.dat &
     done
     exit 0
-​
+
 else
     echo "Pick a role! Exiting."
     exit 1
