@@ -116,7 +116,7 @@ if [[ $SERVER ]]; then
         #numactl --physcpubind=$core --membind=$numanode \
         taskset ${cores[$core]} \
             iperf3 -s -B $serverip -p $port \
-            --output logs/server_${i}.dat &> logs/server_${i}.dat &
+            --logfile logs/server_${i}.dat &> logs/server_${i}.dat &
     done
     exit 0
 
@@ -131,9 +131,9 @@ elif [[ $CLIENT ]]; then
         port=$((server_base_port+i))
         #numactl --physcpubind=$core --membind=$numanode \
         taskset ${cores[$core]} \
-            iperf3 -c $serverip -p $port -l $pktsize -b $pktrate \
+            iperf3 -c $serverip -p $port -l $pktsize -b $rate \
              -t $timeout \
-            --output logs/client_${i}.dat &> logs/client_${i}.dat &
+            --logfile logs/client_${i}.dat &> logs/client_${i}.dat &
     done
     exit 0
 
