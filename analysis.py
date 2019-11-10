@@ -36,7 +36,7 @@ def readIperf(filename):
             bandwidths.append(bandwidth)
     return(transfers, bandwidths)
 
-def plotClientData(data, data_type, filename):
+def plotClientData(data, data_type, folder, filename):
     plt.plot(range(0, len(data)), data)
     plt.xlabel('Timestamp (s)')
     plt.ylabel(data_type)
@@ -47,7 +47,7 @@ def plotClientData(data, data_type, filename):
         name += '-core02'
     title = name + ': ' + data_type
     plt.title(title)
-    figname = 'figs/'+ name + '_' + data_type + '.png'
+    figname = 'figs/'+ folder + '/' + name + '_' + data_type + '.png'
     plt.savefig(figname)
     plt.show()
     plt.close()    
@@ -63,7 +63,24 @@ def plotAllClientIperf():
     'logs/victim_running_tcp/udp-lowpps_evil_client_client02.txt']
     for f in files:
         (transfers, bandwidths) = readIperf(f)
-        plotClientData(transfers, 'transfers', f.split('/')[2])
-        plotClientData(bandwidths, 'bandwidth', f.split('/')[2])
+        split_name = f.split('/')
+        plotClientData(transfers, 'transfers', split_name[1], split_name[2])
+        plotClientData(bandwidths, 'bandwidth', split_name[1], split_name[2])
 
-plotAllClientIperf()
+def plot3mins():
+    files = ['logs/victim_running_udp/3min/tcp-highpps_3min_evil_client_client01.txt',
+    'logs/victim_running_udp/3min/tcp-highpps_3min_evil_client_client02.txt']
+    for f in files:
+        (transfers, bandwidths) = readIperf(f)
+        split_name = f.split('/')
+        plotClientData(transfers, 'transfers', split_name[2], split_name[3])
+        plotClientData(bandwidths, 'bandwidth', split_name[2], split_name[3])
+
+def plotBaseline():
+    f = 'logs/baselines/baseline_manual_tcp.txt'
+    (transfers, bandwidths) = readIperf(f)
+    split_name = f.split('/')
+    plotClientData(transfers, 'transfers', split_name[1], split_name[2])
+    plotClientData(bandwidths, 'bandwidth', split_name[1], split_name[2])
+
+plotBaseline()
