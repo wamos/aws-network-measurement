@@ -30,10 +30,10 @@ if [[ $PING ]]; then
 	ping -s 10000 $address
 
 elif [[ $TCP ]]; then
-	iperf3 -c $address -p 4999 -b 20M
+	iperf3 -c $address -p 4999 -b 20M -t 35
 
 elif [[ $UDP ]]; then
-	iperf3 -c $address -p 4999 -b 20M -u
+	iperf3 -c $address -p 4999 -b 20M -u -t 35
 else
 	echo "Pick a traffic type. Exiting."
 	exit 1

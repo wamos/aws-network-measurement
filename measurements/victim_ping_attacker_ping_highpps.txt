@@ -1,0 +1,18 @@
+PING 172.31.25.53 (172.31.25.53) 10000(10028) bytes of data.
+10008 bytes from 172.31.25.53: icmp_seq=1 ttl=64 time=1.05 ms
+10008 bytes from 172.31.25.53: icmp_seq=2 ttl=64 time=1.06 ms
+10008 bytes from 172.31.25.53: icmp_seq=3 ttl=64 time=0.999 ms
+10008 bytes from 172.31.25.53: icmp_seq=4 ttl=64 time=0.978 ms
+10008 bytes from 172.31.25.53: icmp_seq=5 ttl=64 time=1.01 ms
+10008 bytes from 172.31.25.53: icmp_seq=6 ttl=64 time=0.992 ms
+10008 bytes from 172.31.25.53: icmp_seq=7 ttl=64 time=0.969 ms
+10008 bytes from 172.31.25.53: icmp_seq=8 ttl=64 time=0.957 ms
+10008 bytes from 172.31.25.53: icmp_seq=9 ttl=64 time=1.05 ms
+10008 bytes from 172.31.25.53: icmp_seq=10 ttl=64 time=1.00 ms
+10008 bytes from 172.31.25.53: icmp_seq=11 ttl=64 time=1.01 ms
+10008 bytes from 172.31.25.53: icmp_seq=12 ttl=64 time=1.06 ms
+10008 bytes from 172.31.25.53: icmp_seq=13 ttl=64 time=1.11 ms
+
+--- 172.31.25.53 ping statistics ---
+13 packets transmitted, 13 received, 0% packet loss, time 12014ms
+rtt min/avg/max/mdev = 0.957/1.020/1.110/0.052 ms
