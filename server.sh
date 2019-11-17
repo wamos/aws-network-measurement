@@ -1,5 +1,32 @@
 #!/bin/bash
 
-taskset 0x01 iperf3 -s -p 5000 > logs/server01.txt &
-taskset 0x02 iperf3 -s -p 5001 > logs/server02.txt &
-
+taskset 0x00000001 iperf3 -s -p 5000 > logs/server00.txt &
+taskset 0x00000002 iperf3 -s -p 5001 > logs/server01.txt &
+taskset 0x00000004 iperf3 -s -p 5002 > logs/server02.txt &
+taskset 0x00000008 iperf3 -s -p 5003 > logs/server03.txt &
+taskset 0x00000010 iperf3 -s -p 5004 > logs/server04.txt &
+taskset 0x00000020 iperf3 -s -p 5005 > logs/server05.txt &
+taskset 0x00000040 iperf3 -s -p 5006 > logs/server06.txt &
+taskset 0x00000080 iperf3 -s -p 5007 > logs/server07.txt &
+taskset 0x00000100 iperf3 -s -p 5008 > logs/server08.txt &
+taskset 0x00000200 iperf3 -s -p 5009 > logs/server09.txt &
+taskset 0x00000400 iperf3 -s -p 5010 > logs/server10.txt &
+taskset 0x00000800 iperf3 -s -p 5011 > logs/server11.txt &
+taskset 0x00001000 iperf3 -s -p 5012 > logs/server12.txt &
+taskset 0x00002000 iperf3 -s -p 5013 > logs/server13.txt &
+taskset 0x00004000 iperf3 -s -p 5014 > logs/server14.txt &
+taskset 0x00008000 iperf3 -s -p 5015 > logs/server15.txt &
+taskset 0x00010000 iperf3 -s -p 5016 > logs/server16.txt &
+taskset 0x00020000 iperf3 -s -p 5017 > logs/server17.txt &
+taskset 0x00040000 iperf3 -s -p 5018 > logs/server18.txt &
+taskset 0x00080000 iperf3 -s -p 5019 > logs/server19.txt &
+taskset 0x00100000 iperf3 -s -p 5020 > logs/server20.txt &
+taskset 0x00200000 iperf3 -s -p 5021 > logs/server21.txt &
+taskset 0x00400000 iperf3 -s -p 5022 > logs/server22.txt &
+taskset 0x00800000 iperf3 -s -p 5023 > logs/server23.txt &
+taskset 0x01000000 iperf3 -s -p 5024 > logs/server24.txt &
+taskset 0x02000000 iperf3 -s -p 5025 > logs/server25.txt &
+taskset 0x04000000 iperf3 -s -p 5026 > logs/server26.txt &
+taskset 0x08000000 iperf3 -s -p 5027 > logs/server27.txt &
+taskset 0x10000000 iperf3 -s -p 5028 > logs/server28.txt &
+taskset 0x20000000 iperf3 -s -p 5029 > logs/server29.txt &
