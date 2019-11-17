@@ -52,6 +52,21 @@ def plotClientData(data, data_type, folder, filename):
     plt.show()
     plt.close()    
     
+def plotVictimData(data, data_type, name):
+    #plt.ylim(1.9, 2.1)
+    plt.plot(range(0, len(data)), data, label='Actual')
+    plt.plot(range(0, len(data)), [20000000]*len(data), label='Attempted')
+    plt.xlabel('Timestamp (s)')
+    plt.ylabel(data_type)
+    name = name.split('.')[0]
+    title = name + ': ' + data_type
+    plt.title(title)
+    plt.legend()
+    figname = 'figs/victim_data/' + name + '_' + data_type + '.png'
+    plt.savefig(figname)
+    plt.show()
+    plt.close() 
+
 def plotAllClientIperf():
     files = ['logs/victim_running_tcp/tcp-highpps_evil_client_client01.txt', 
     'logs/victim_running_tcp/tcp-highpps_evil_client_client02.txt',
@@ -83,4 +98,6 @@ def plotBaseline():
     plotClientData(transfers, 'transfers', split_name[1], split_name[2])
     plotClientData(bandwidths, 'bandwidth', split_name[1], split_name[2])
 
-plotBaseline()
+f = 'measurements/baseline_victim_tcp.txt'
+(transfers, bandwidths) = readIperf(f)
+plotVictimData(bandwidths, 'Bandwidth', 'baseline_victim_tcp.txt')
