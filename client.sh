@@ -50,8 +50,8 @@ else
 	exit 1
 fi
 
-sar -n DEV 1 > logs/"$EXPNAME"_"$ROLE"_sar.txt &
-sar -P 0,1 > logs/"$EXPNAME"_"$ROLE"_cpu.txt &
+# sar -n DEV 1 > logs/"$EXPNAME"_"$ROLE"_sar.txt &
+# sar -P 0,1 > logs/"$EXPNAME"_"$ROLE"_cpu.txt &
 sleep $DURATION
 sleep 1
 pkill sar
