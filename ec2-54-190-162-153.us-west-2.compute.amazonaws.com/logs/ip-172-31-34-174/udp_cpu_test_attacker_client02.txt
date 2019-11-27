@@ -1,0 +1,19 @@
+Connecting to host 172.31.33.192, port 5001
+[  4] local 172.31.34.174 port 55946 connected to 172.31.33.192 port 5001
+[ ID] Interval           Transfer     Bandwidth       Total Datagrams
+[  4]   0.00-1.00   sec  68.9 KBytes   564 Kbits/sec  70545  
+[  4]   1.00-2.00   sec  68.9 KBytes   564 Kbits/sec  70539  
+[  4]   2.00-3.00   sec  68.7 KBytes   563 Kbits/sec  70326  
+[  4]   3.00-4.00   sec  69.1 KBytes   566 Kbits/sec  70755  
+[  4]   4.00-5.00   sec  69.1 KBytes   566 Kbits/sec  70802  
+[  4]   5.00-6.00   sec  69.1 KBytes   566 Kbits/sec  70792  
+[  4]   6.00-7.00   sec  69.1 KBytes   566 Kbits/sec  70802  
+[  4]   7.00-8.00   sec  69.1 KBytes   566 Kbits/sec  70743  
+[  4]   8.00-9.00   sec  69.1 KBytes   566 Kbits/sec  70783  
+[  4]   9.00-10.00  sec  69.1 KBytes   566 Kbits/sec  70795  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Jitter    Lost/Total Datagrams
+[  4]   0.00-10.00  sec   690 KBytes   566 Kbits/sec  0.030 ms  0/0 (0%)  
+[  4] Sent 0 datagrams
+
+iperf Done.
