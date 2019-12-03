@@ -31,6 +31,10 @@ case $i in
 	pktsize="${i#*=}"
 	;;
 
+	-p=*|--port=*)
+	PORT="${i#*=}"
+	;;
+
 	*)
 	;;
 esac
@@ -40,11 +44,11 @@ echo $DURATION, $EXPNAME
 pktsize=${pktsize:-1}
 
 if [[ $UDP ]]; then
-	taskset 0x01 iperf3 -c 172.31.33.192 -p 5000 -t $DURATION -l $pktsize -u -b 5G > logs/"$EXPNAME"_"$ROLE"_client01.txt &
-	taskset 0x02 iperf3 -c 172.31.33.192 -p 5001 -t $DURATION -l $pktsize -u -b 5G > logs/"$EXPNAME"_"$ROLE"_client02.txt &
+	taskset 0x01 iperf3 -c 172.31.33.192 -p $PORT -t $DURATION -l $pktsize -u -b 5G > logs/"$EXPNAME"_"$ROLE"_client01.txt &
+	taskset 0x02 iperf3 -c 172.31.33.192 -p $((PORT+1)) -t $DURATION -l $pktsize -u -b 5G > logs/"$EXPNAME"_"$ROLE"_client02.txt &
 elif [[ $TCP ]]; then
-	taskset 0x01 iperf3 -c 172.31.33.192 -p 5000 -t $DURATION -l $pktsize -b 5G > logs/"$EXPNAME"_"$ROLE"_client01.txt &
-	taskset 0x02 iperf3 -c 172.31.33.192 -p 5001 -t $DURATION -l $pktsize -b 5G > logs/"$EXPNAME"_"$ROLE"_client02.txt &
+	taskset 0x01 iperf3 -c 172.31.33.192 -p $PORT -t $DURATION -l $pktsize -b 5G > logs/"$EXPNAME"_"$ROLE"_client01.txt &
+	taskset 0x02 iperf3 -c 172.31.33.192 -p $((PORT+1)) -t $DURATION -l $pktsize -b 5G > logs/"$EXPNAME"_"$ROLE"_client02.txt &
 else
 	echo "Pick a protocol"
 	exit 1
