@@ -1,0 +1,39 @@
+Connecting to host 172.31.23.24, port 5000
+[  4] local 172.31.42.64 port 39167 connected to 172.31.23.24 port 5000
+[ ID] Interval           Transfer     Bandwidth       Total Datagrams
+[  4]   0.00-1.00   sec   127 MBytes  1.07 Gbits/sec  14845  
+[  4]   1.00-2.00   sec   142 MBytes  1.19 Gbits/sec  16491  
+[  4]   2.00-3.00   sec   142 MBytes  1.19 Gbits/sec  16490  
+[  4]   3.00-4.00   sec   142 MBytes  1.19 Gbits/sec  16490  
+[  4]   4.00-5.00   sec   142 MBytes  1.19 Gbits/sec  16491  
+[  4]   5.00-6.00   sec   142 MBytes  1.19 Gbits/sec  16490  
+[  4]   6.00-7.00   sec   142 MBytes  1.19 Gbits/sec  16486  
+[  4]   7.00-8.00   sec   142 MBytes  1.19 Gbits/sec  16489  
+[  4]   8.00-9.00   sec   176 MBytes  1.48 Gbits/sec  20541  
+[  4]   9.00-10.00  sec   142 MBytes  1.19 Gbits/sec  16492  
+[  4]  10.00-11.00  sec   142 MBytes  1.19 Gbits/sec  16494  
+[  4]  11.00-12.00  sec   142 MBytes  1.19 Gbits/sec  16498  
+[  4]  12.00-13.00  sec   142 MBytes  1.19 Gbits/sec  16490  
+[  4]  13.00-14.00  sec   142 MBytes  1.19 Gbits/sec  16492  
+[  4]  14.00-15.00  sec   142 MBytes  1.19 Gbits/sec  16493  
+[  4]  15.00-16.00  sec   142 MBytes  1.19 Gbits/sec  16499  
+[  4]  16.00-17.00  sec   142 MBytes  1.19 Gbits/sec  16498  
+[  4]  17.00-18.00  sec   142 MBytes  1.19 Gbits/sec  16491  
+[  4]  18.00-19.00  sec   142 MBytes  1.19 Gbits/sec  16492  
+[  4]  19.00-20.00  sec   142 MBytes  1.19 Gbits/sec  16500  
+[  4]  20.00-21.00  sec   142 MBytes  1.19 Gbits/sec  16498  
+[  4]  21.00-22.00  sec   142 MBytes  1.19 Gbits/sec  16499  
+[  4]  22.00-23.00  sec   142 MBytes  1.19 Gbits/sec  16489  
+[  4]  23.00-24.00  sec   142 MBytes  1.19 Gbits/sec  16490  
+[  4]  24.00-25.00  sec   142 MBytes  1.19 Gbits/sec  16499  
+[  4]  25.00-26.00  sec   142 MBytes  1.19 Gbits/sec  16498  
+[  4]  26.00-27.00  sec   142 MBytes  1.19 Gbits/sec  16499  
+[  4]  27.00-28.00  sec   142 MBytes  1.19 Gbits/sec  16491  
+[  4]  28.00-29.00  sec   142 MBytes  1.19 Gbits/sec  16492  
+[  4]  29.00-30.00  sec   142 MBytes  1.19 Gbits/sec  16493  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Jitter    Lost/Total Datagrams
+[  4]   0.00-30.00  sec  4.17 GBytes  1.19 Gbits/sec  0.032 ms  152383/166253 (92%)  
+[  4] Sent 166253 datagrams
+
+iperf Done.
