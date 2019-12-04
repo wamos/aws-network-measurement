@@ -1,0 +1,2 @@
+Connecting to host 172.31.33.192, port 5018
+iperf3: error - unable to read from stream socket: Resource temporarily unavailable

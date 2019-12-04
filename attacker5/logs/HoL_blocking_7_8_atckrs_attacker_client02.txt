@@ -1,0 +1,69 @@
+Connecting to host 172.31.33.192, port 5011
+[  4] local 172.31.47.229 port 39622 connected to 172.31.33.192 port 5011
+[ ID] Interval           Transfer     Bandwidth       Total Datagrams
+[  4]   0.00-1.00   sec  68.9 KBytes   564 Kbits/sec  70507  
+[  4]   1.00-2.00   sec  68.3 KBytes   560 Kbits/sec  69945  
+[  4]   2.00-3.00   sec  67.2 KBytes   551 Kbits/sec  68820  
+[  4]   3.00-4.00   sec  67.1 KBytes   550 Kbits/sec  68698  
+[  4]   4.00-5.00   sec  67.4 KBytes   552 Kbits/sec  69017  
+[  4]   5.00-6.00   sec  67.0 KBytes   549 Kbits/sec  68573  
+[  4]   6.00-7.00   sec  67.5 KBytes   553 Kbits/sec  69152  
+[  4]   7.00-8.00   sec  68.8 KBytes   564 Kbits/sec  70491  
+[  4]   8.00-9.00   sec  67.3 KBytes   552 Kbits/sec  68942  
+[  4]   9.00-10.00  sec  68.6 KBytes   562 Kbits/sec  70265  
+[  4]  10.00-11.00  sec  68.0 KBytes   557 Kbits/sec  69591  
+[  4]  11.00-12.00  sec  68.2 KBytes   558 Kbits/sec  69812  
+[  4]  12.00-13.00  sec  70.4 KBytes   577 Kbits/sec  72069  
+[  4]  13.00-14.00  sec  69.6 KBytes   570 Kbits/sec  71241  
+[  4]  14.00-15.00  sec  69.1 KBytes   566 Kbits/sec  70797  
+[  4]  15.00-16.00  sec  70.1 KBytes   574 Kbits/sec  71763  
+[  4]  16.00-17.00  sec  69.2 KBytes   567 Kbits/sec  70910  
+[  4]  17.00-18.00  sec  69.7 KBytes   571 Kbits/sec  71412  
+[  4]  18.00-19.00  sec  68.3 KBytes   559 Kbits/sec  69911  
+[  4]  19.00-20.00  sec  67.8 KBytes   555 Kbits/sec  69435  
+[  4]  20.00-21.00  sec  68.7 KBytes   563 Kbits/sec  70347  
+[  4]  21.00-22.00  sec  68.6 KBytes   562 Kbits/sec  70247  
+[  4]  22.00-23.00  sec  68.3 KBytes   560 Kbits/sec  69988  
+[  4]  23.00-24.00  sec  67.4 KBytes   552 Kbits/sec  69008  
+[  4]  24.00-25.00  sec  68.0 KBytes   557 Kbits/sec  69589  
+[  4]  25.00-26.00  sec  68.2 KBytes   559 Kbits/sec  69865  
+[  4]  26.00-27.00  sec  68.0 KBytes   557 Kbits/sec  69601  
+[  4]  27.00-28.00  sec  68.1 KBytes   558 Kbits/sec  69765  
+[  4]  28.00-29.00  sec  67.9 KBytes   556 Kbits/sec  69509  
+[  4]  29.00-30.00  sec  68.1 KBytes   558 Kbits/sec  69773  
+[  4]  30.00-31.00  sec  68.2 KBytes   559 Kbits/sec  69870  
+[  4]  31.00-32.00  sec  67.7 KBytes   554 Kbits/sec  69302  
+[  4]  32.00-33.00  sec  67.4 KBytes   552 Kbits/sec  69048  
+[  4]  33.00-34.00  sec  68.0 KBytes   557 Kbits/sec  69660  
+[  4]  34.00-35.00  sec  68.6 KBytes   562 Kbits/sec  70214  
+[  4]  35.00-36.00  sec  69.0 KBytes   565 Kbits/sec  70669  
+[  4]  36.00-37.00  sec  69.5 KBytes   570 Kbits/sec  71195  
+[  4]  37.00-38.00  sec  70.0 KBytes   573 Kbits/sec  71666  
+[  4]  38.00-39.00  sec  70.2 KBytes   575 Kbits/sec  71875  
+[  4]  39.00-40.00  sec  70.1 KBytes   574 Kbits/sec  71806  
+[  4]  40.00-41.00  sec  69.4 KBytes   569 Kbits/sec  71098  
+[  4]  41.00-42.00  sec  69.9 KBytes   572 Kbits/sec  71531  
+[  4]  42.00-43.00  sec  69.7 KBytes   571 Kbits/sec  71415  
+[  4]  43.00-44.00  sec  70.2 KBytes   575 Kbits/sec  71911  
+[  4]  44.00-45.00  sec  69.2 KBytes   567 Kbits/sec  70885  
+[  4]  45.00-46.00  sec  68.4 KBytes   560 Kbits/sec  70056  
+[  4]  46.00-47.00  sec  68.4 KBytes   560 Kbits/sec  70031  
+[  4]  47.00-48.00  sec  67.7 KBytes   554 Kbits/sec  69281  
+[  4]  48.00-49.00  sec  67.3 KBytes   551 Kbits/sec  68892  
+[  4]  49.00-50.00  sec  68.6 KBytes   562 Kbits/sec  70255  
+[  4]  50.00-51.00  sec  67.8 KBytes   555 Kbits/sec  69383  
+[  4]  51.00-52.00  sec  67.6 KBytes   553 Kbits/sec  69179  
+[  4]  52.00-53.00  sec  70.3 KBytes   576 Kbits/sec  71941  
+[  4]  53.00-54.00  sec  70.7 KBytes   579 Kbits/sec  72354  
+[  4]  54.00-55.00  sec  70.7 KBytes   579 Kbits/sec  72367  
+[  4]  55.00-56.00  sec  71.6 KBytes   586 Kbits/sec  73310  
+[  4]  56.00-57.00  sec  72.4 KBytes   593 Kbits/sec  74109  
+[  4]  57.00-58.00  sec  73.5 KBytes   602 Kbits/sec  75308  
+[  4]  58.00-59.00  sec  75.6 KBytes   620 Kbits/sec  77445  
+[  4]  59.00-60.00  sec  74.5 KBytes   610 Kbits/sec  76264  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Jitter    Lost/Total Datagrams
+[  4]   0.00-60.00  sec  4.04 MBytes   566 Kbits/sec  0.016 ms  0/0 (0%)  
+[  4] Sent 0 datagrams
+
+iperf Done.

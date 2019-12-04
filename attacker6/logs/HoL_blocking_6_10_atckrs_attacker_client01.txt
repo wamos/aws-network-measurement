@@ -1,0 +1,69 @@
+Connecting to host 172.31.33.192, port 5012
+[  4] local 172.31.32.121 port 56346 connected to 172.31.33.192 port 5012
+[ ID] Interval           Transfer     Bandwidth       Total Datagrams
+[  4]   0.00-1.00   sec   147 KBytes  1.20 Mbits/sec  150031  
+[  4]   1.00-2.00   sec   146 KBytes  1.19 Mbits/sec  149340  
+[  4]   2.00-3.00   sec   146 KBytes  1.19 Mbits/sec  149051  
+[  4]   3.00-4.00   sec   145 KBytes  1.19 Mbits/sec  148745  
+[  4]   4.00-5.00   sec   145 KBytes  1.18 Mbits/sec  147982  
+[  4]   5.00-6.00   sec   146 KBytes  1.20 Mbits/sec  149900  
+[  4]   6.00-7.00   sec   147 KBytes  1.20 Mbits/sec  150276  
+[  4]   7.00-8.00   sec   147 KBytes  1.20 Mbits/sec  150223  
+[  4]   8.00-9.00   sec   147 KBytes  1.20 Mbits/sec  150125  
+[  4]   9.00-10.00  sec   147 KBytes  1.20 Mbits/sec  150183  
+[  4]  10.00-11.00  sec   147 KBytes  1.20 Mbits/sec  150141  
+[  4]  11.00-12.00  sec   147 KBytes  1.20 Mbits/sec  150089  
+[  4]  12.00-13.00  sec   147 KBytes  1.20 Mbits/sec  150115  
+[  4]  13.00-14.00  sec   147 KBytes  1.20 Mbits/sec  150091  
+[  4]  14.00-15.00  sec   147 KBytes  1.20 Mbits/sec  150115  
+[  4]  15.00-16.00  sec   147 KBytes  1.20 Mbits/sec  150103  
+[  4]  16.00-17.00  sec   147 KBytes  1.20 Mbits/sec  150081  
+[  4]  17.00-18.00  sec   147 KBytes  1.20 Mbits/sec  150095  
+[  4]  18.00-19.00  sec   147 KBytes  1.21 Mbits/sec  150670  
+[  4]  19.00-20.00  sec   147 KBytes  1.21 Mbits/sec  150655  
+[  4]  20.00-21.00  sec   147 KBytes  1.21 Mbits/sec  150665  
+[  4]  21.00-22.00  sec   147 KBytes  1.21 Mbits/sec  150706  
+[  4]  22.00-23.00  sec   147 KBytes  1.21 Mbits/sec  150744  
+[  4]  23.00-24.00  sec   147 KBytes  1.21 Mbits/sec  150777  
+[  4]  24.00-25.00  sec   147 KBytes  1.21 Mbits/sec  150759  
+[  4]  25.00-26.00  sec   147 KBytes  1.21 Mbits/sec  150655  
+[  4]  26.00-27.00  sec   147 KBytes  1.21 Mbits/sec  150680  
+[  4]  27.00-28.00  sec   147 KBytes  1.21 Mbits/sec  150693  
+[  4]  28.00-29.00  sec   147 KBytes  1.21 Mbits/sec  150742  
+[  4]  29.00-30.00  sec   148 KBytes  1.21 Mbits/sec  151416  
+[  4]  30.00-31.00  sec   148 KBytes  1.21 Mbits/sec  151403  
+[  4]  31.00-32.00  sec   147 KBytes  1.21 Mbits/sec  150679  
+[  4]  32.00-33.00  sec   147 KBytes  1.21 Mbits/sec  150765  
+[  4]  33.00-34.00  sec   147 KBytes  1.21 Mbits/sec  150679  
+[  4]  34.00-35.00  sec   147 KBytes  1.21 Mbits/sec  150674  
+[  4]  35.00-36.00  sec   147 KBytes  1.21 Mbits/sec  150707  
+[  4]  36.00-37.00  sec   147 KBytes  1.21 Mbits/sec  150703  
+[  4]  37.00-38.00  sec   147 KBytes  1.21 Mbits/sec  150755  
+[  4]  38.00-39.00  sec   147 KBytes  1.21 Mbits/sec  150710  
+[  4]  39.00-40.00  sec   147 KBytes  1.21 Mbits/sec  150741  
+[  4]  40.00-41.00  sec   147 KBytes  1.21 Mbits/sec  150776  
+[  4]  41.00-42.00  sec   145 KBytes  1.19 Mbits/sec  148877  
+[  4]  42.00-43.00  sec   145 KBytes  1.19 Mbits/sec  148831  
+[  4]  43.00-44.00  sec   145 KBytes  1.19 Mbits/sec  148857  
+[  4]  44.00-45.00  sec   145 KBytes  1.19 Mbits/sec  148864  
+[  4]  45.00-46.00  sec   145 KBytes  1.19 Mbits/sec  148854  
+[  4]  46.00-47.00  sec   145 KBytes  1.19 Mbits/sec  148871  
+[  4]  47.00-48.00  sec   145 KBytes  1.19 Mbits/sec  148853  
+[  4]  48.00-49.00  sec   145 KBytes  1.19 Mbits/sec  148827  
+[  4]  49.00-50.00  sec   146 KBytes  1.20 Mbits/sec  149743  
+[  4]  50.00-51.00  sec   147 KBytes  1.20 Mbits/sec  150624  
+[  4]  51.00-52.00  sec   147 KBytes  1.21 Mbits/sec  150664  
+[  4]  52.00-53.00  sec   147 KBytes  1.21 Mbits/sec  150657  
+[  4]  53.00-54.00  sec   147 KBytes  1.21 Mbits/sec  150966  
+[  4]  54.00-55.00  sec   148 KBytes  1.21 Mbits/sec  151686  
+[  4]  55.00-56.00  sec   149 KBytes  1.22 Mbits/sec  152478  
+[  4]  56.00-57.00  sec   150 KBytes  1.23 Mbits/sec  153255  
+[  4]  57.00-58.00  sec   150 KBytes  1.23 Mbits/sec  153780  
+[  4]  58.00-59.00  sec   151 KBytes  1.23 Mbits/sec  154198  
+[  4]  59.00-60.00  sec   151 KBytes  1.23 Mbits/sec  154257  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Jitter    Lost/Total Datagrams
+[  4]   0.00-60.00  sec  8.61 MBytes  1.20 Mbits/sec  0.019 ms  0/0 (0%)  
+[  4] Sent 0 datagrams
+
+iperf Done.

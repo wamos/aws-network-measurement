@@ -28,15 +28,29 @@ def command(filename, command):
             except subprocess.CalledProcessError as err:
                 print('SSH failed for ', dns, ': ', err)
 
+def attackerCommand(filename, exp_name):
+    with open(filename) as f:
+        for i, line in enumerate(f):
+            dns = (line.split(':')[1].replace(' ','').rstrip())
+            print('\t', dns)
+            target = 'ubuntu@' + dns
+            port = i*2 + 5000
+            command = 'cd aws-network-measurement; pkill iperf; nohup ./client.sh --expname=' + exp_name + ' --port=' + str(port) + ' --duration=360 -u -s 1 -b 10G > /dev/null 2>&1 &'
+            try:
+                print('Starting command. Waiting for ssh to return...')
+                resp = subprocess.check_output(['ssh', '-o', 'StrictHostKeyChecking=no', '-i', '~/.ssh/datacenter_systems_group04_sysnet.pem', target, command], universal_newlines=True)
+                print('SSH returned')
+            except subprocess.CalledProcessError as err:
+                print('SSH failed for ', dns, ': ', err)
+
 def runVictim(exp_name):
     packet_sink_ip = '172.31.30.156'
-    victim = 'pkill iperf; cd aws-network-measurement; iperf3 -c ' + packet_sink_ip + ' -p 5000 -t 30 -l 1 -b 620M > logs/' + exp_name + '_victim.txt &'
+    victim = 'pkill iperf; cd aws-network-measurement; iperf3 -c ' + packet_sink_ip + ' -p 4999 -t 300 -l 1 -b 1G > logs/' + exp_name + '_victim.txt &'
     command('victim_ip.txt', victim)
     print('Started victim')
 
 def runAttackers(exp_name):
-    client = 'cd aws-network-measurement; pkill iperf; nohup ./client.sh --expname=' + exp_name + ' --duration=60 -u -s 1 -b 10G > /dev/null 2>&1 &'
-    command('attacker_ips.txt', client)
+    attackerCommand('attacker_ips.txt', exp_name)
     print('Started attackers')
 
 def runAttackerSink(exp_name):
@@ -45,14 +59,14 @@ def runAttackerSink(exp_name):
     print('Started attacker sink')
 
 def runVictimSink(exp_name):
-    packet_sink = 'pkill iperf; cd aws-network-measurement; iperf3 -s -p 5000 > logs/' + exp_name + '_victim_sink.txt &'
+    packet_sink = 'pkill iperf; cd aws-network-measurement; iperf3 -s -p 4999 > logs/' + exp_name + '_victim_sink.txt &'
     command('victim_sink_ip.txt', packet_sink)
     print('Started victim sink')
 
 def runAll():
-    exp = 'HoL_blocking'
+    exp = 'long_HoL_10_attackers'
     runAttackerSink(exp)
-    runVictimSink(exp)
+    # runVictimSink(exp)
     runAttackers(exp)
     runVictim(exp)
 
@@ -78,7 +92,7 @@ def scp_stuff():
     cmd = 'cd aws-network-measurement/logs; mkdir $(hostname); mv * $(hostname); ' # yes | scp -r -i ~/datacenter_systems_group04_sysnet.pem $(hostname) ubuntu@ec2-54-203-210-16.us-west-2.compute.amazonaws.com:~/attacker_logs/'
     command('attacker_ips.txt', cmd)
 
-scp_stuff()
+# scp_stuff()
 # pull()
 # cmd = '''sudo chmod 777 /etc/default/sysstat;
 # sudo echo 'ENABLED=“true”' > /etc/default/sysstat;
@@ -87,6 +101,7 @@ scp_stuff()
 
 # # cmd = 'echo attacker > name.txt'
 # command('attacker_ips.txt', cmd2)
+runAll()
 
 
 
